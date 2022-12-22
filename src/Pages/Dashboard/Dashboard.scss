@@ -1,0 +1,15 @@
+.dashboard {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  padding: 24px;
+}
+
+.dashboard-left {
+  flex-grow: 1;
+}
+
+.dashboard-right {
+  width: 372px;
+  margin-left: 24px;
+}

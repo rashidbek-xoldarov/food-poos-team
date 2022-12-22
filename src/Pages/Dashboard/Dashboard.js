@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import "./Dashboard.scss"
+import "./Dashboard.scss";
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
-  )
-}
+    <div className="dashboard">
+      <div className="dashboard-left"></div>
+      <div className="dashboard-right"></div>
+    </div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
