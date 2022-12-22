@@ -1,0 +1,49 @@
+
+.food_item {
+    position: relative;
+    width: 192px;
+    margin-bottom: 58px;
+    padding: 0 24px 24px;
+    text-align: center;
+    background: #1F1D2B;
+    border-radius: 16px;
+}
+
+.food_img {
+    position: absolute;
+    top: -3.5rem;
+    right: 0;
+    left: 0;
+    width: 132px;
+    height: 132px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.food_item-box {
+    margin-top: 114px;
+}
+
+.food_title {
+    font-family: 'Barlow';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.food_price {
+    font-family: 'Barlow';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.food_available {
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #ABBBC2;
+}

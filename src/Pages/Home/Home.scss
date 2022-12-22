@@ -1,0 +1,42 @@
+@import "../../assets/styles/mixin";
+
+.home_main {
+    flex:5;
+    padding-right: 38px;
+    padding-left: 10px;
+}
+
+.foood_list {
+    display: flex;
+    width: 100%;
+    @include unstyled;
+    margin-bottom: 24px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid  #393C49;
+    
+}
+
+
+.foood_item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.actived {
+    padding-bottom: 13px;
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #EA7C69;
+    text-decoration: none;
+    border-bottom: 3px solid #EA7C69;
+}
+
+.inactived {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-decoration: none;
+    color: #fff;
+}
