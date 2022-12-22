@@ -1,0 +1,34 @@
+.setting-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 355px;
+  margin: 24px 0 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: scroll;
+}
+
+.setting-card-list::-webkit-scrollbar {
+  display: none;
+}
+
+.setting-card-item-first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 221px;
+  height: 299px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  border: 1px dashed #ea7c69;
+  border-radius: 8px;
+  color: #ea7c69;
+}
+
+.setting-card-plus {
+  font-size: 30px;
+  margin-bottom: 20px;
+}

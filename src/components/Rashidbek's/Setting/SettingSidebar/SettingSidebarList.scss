@@ -1,0 +1,68 @@
+.settingbar-list {
+  flex-shrink: 0;
+  width: 275px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  background: #1f1d2b;
+  border-radius: 8px;
+}
+
+.settingbar-link {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px 0px 24px 24px;
+  text-decoration: none;
+}
+
+.settingbar-img {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.active-link-settingbar {
+  background-color: rgba(234, 124, 105, 0.26);
+}
+
+.active-link-settingbar .settingbar-item-title {
+  color: #ea7c69;
+}
+
+.active-link-settingbar .settingbar-img {
+  color: #ea7c69;
+}
+
+.active-link-settingbar .settingbar-line {
+  display: inline-block;
+}
+
+.settingbar-item-info {
+  flex-grow: 1;
+}
+
+.settingbar-item-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.settingbar-item-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #abbbc2;
+}
+
+.settingbar-line {
+  display: none;
+  width: 4px;
+  height: 39px;
+  background-color: #ea7c69;
+  border-radius: 30px;
+}

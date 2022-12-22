@@ -1,0 +1,38 @@
+.setting-main {
+  flex-grow: 1;
+  margin-left: 48px;
+  margin-right: 48px;
+  padding: 24px;
+  background: #1f1d2b;
+  border-radius: 8px;
+}
+
+.setting-main-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.setting-main-top-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.setting-main-top-select {
+  padding: 14px 13px 14px 43px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  background-image: url("../../../../assets/images/Option.svg");
+  background-repeat: no-repeat;
+  background-position: center left 14px;
+  background-color: #1f1d2b;
+  border: 1px solid #393c49;
+  border-radius: 8px;
+  color: #ffffff;
+  appearance: none;
+}
