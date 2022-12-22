@@ -1,0 +1,171 @@
+@import "../../../assets/styles/mixin";
+
+.order {
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // height: 100%;
+    // min-height: 800px;
+    padding: 24px;
+    background: #1F1D2B;
+    border-radius: 8px;
+}
+
+.order_header {
+    border-bottom: 1px solid #393C49;
+}
+
+.order_txt {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.qty {
+    margin-right: 26px;
+}
+
+.order_btn {
+    margin-right: 8px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    padding: 12px 7px;
+    color: #fff;
+    background: #EA7C69;
+    border-radius: 8px;
+    border: 0;
+}
+
+.inactivve {
+    background-color: #1F1D2B;
+    color: #EA7C69;
+    border: 1px solid #393939;
+}
+
+.order_main-list {
+    @include unstyled;
+    width: 330px;
+    height: 454px;
+    overflow: scroll;
+}
+
+.order_main-list::-webkit-scrollbar {
+    display: none;
+} 
+
+.order_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order_item{
+    display: flex;
+}
+
+.order_img {
+    width: 45px;
+    height: 45px;
+    margin-top: 13px;
+    margin-right: 6px;
+    border-radius: 50%;
+    
+}
+
+.order_title {
+    width: 140px;
+    margin-bottom: 0;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.current_price {
+    font-weight: 500;
+    color: #ABBBC2;
+}
+
+.quantity {
+    margin-right: 24px;
+    padding: 19px;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+}
+
+.total_price {
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
+.order_input {
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 14px;
+    padding-right: 88px;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+}
+
+.order_input::placeholder {
+    color: #E0E6E9;
+}
+
+.delete_order {
+    margin-top: 5px;
+    margin-left: 9px;
+    padding: 20px 22px;
+    border: 0;
+    background-image: url("../../../assets/images/icons/Trash.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-color: #1F1D2B;
+    background-position: center center;
+    border-radius: 8px;
+    border: 1px solid #EA7C69;
+}
+
+.order_footer {
+    position: absolute;
+    top: 45rem;
+    z-index: 2;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    bottom: 0;
+    border-top: 1px solid #2D303E;
+    background-color: #1F1D2B;
+
+}
+
+.discount, .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment_btn {
+    display: inline-block;
+    margin-top: 45px;
+    padding: 14px 102px;
+    background: #EA7C69;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+
+}

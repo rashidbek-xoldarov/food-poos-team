@@ -1,0 +1,34 @@
+
+.home_header {
+    display: flex;
+    justify-content: space-between;
+    height: 105px;
+    margin-bottom: 24px;
+    padding: 24px 0;
+}
+
+.home_title {
+    margin-bottom: 4px;
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.home_title + p {
+    margin-top: 0;
+}
+
+.home_form .home_input {
+    width: 220px;
+    height: 48px;
+    padding: 14px;
+    padding-left: 38px;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    background-image: url("../../../assets/images/icons/search.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 20px;
+    background-position: left center;
+}

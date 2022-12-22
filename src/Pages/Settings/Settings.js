@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Redirect, Navigate } from "react-router-dom";
 import SettingMain from "../../components/Rashidbek's/Setting/SettingMain/SettingMain";
 import SettingSidebarList from "../../components/Rashidbek's/Setting/SettingSidebar/SettingSidebarList";
 

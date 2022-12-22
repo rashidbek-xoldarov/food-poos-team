@@ -4,7 +4,7 @@ import {
   About,
   Appereance,
   Management,
-  Notifications,
+  Notification,
   Restaurant,
   Security,
 } from "../../../../assets/images/icons/icons";
@@ -33,7 +33,7 @@ const SettingSidebarList = () => {
     },
 
     {
-      image: <Notifications className="settingbar-img" />,
+      image: <Notification className="settingbar-img" />,
       url: "notifications",
       title: "Notifications",
       text: "Customize your notifications",

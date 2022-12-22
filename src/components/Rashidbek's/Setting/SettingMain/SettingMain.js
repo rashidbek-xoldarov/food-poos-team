@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Nav from "./Nav/Nav";
 import SettingCardList from "./SettingCard/SettingCardList";
 
@@ -17,7 +18,9 @@ const SettingMain = () => {
         </select>
       </div>
       <Nav />
-      <SettingCardList />
+      <Routes>
+        <Route index element={<SettingCardList />} />
+      </Routes>
     </div>
   );
 };
