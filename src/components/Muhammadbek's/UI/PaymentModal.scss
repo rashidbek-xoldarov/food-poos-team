@@ -198,7 +198,8 @@ input::placeholder {
     color: #EA7C69;
     background: #1F1D2B;
     border-radius: 8px;
-    border: 1px solid #EA7C69
+    border: 1px solid #EA7C69;
+    cursor: pointer;
 }
 
 .payment_check {
@@ -210,7 +211,8 @@ input::placeholder {
     color: #fff;
     box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
     border-radius: 8px;
-    border: 1px solid #EA7C69
+    border: 1px solid #EA7C69;
+    cursor: pointer;
     
 }
 
