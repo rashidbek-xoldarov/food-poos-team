@@ -1,11 +1,15 @@
 import { InputField } from "../../../components/Muhammadbek's/UI/InputFiled";
 import "./Order.scss";
 import { hotDishes } from "../../../data/Dishes";
+import { useState } from "react";
 
 const orderData = hotDishes.slice(0, 4);
 
 let total = undefined;
-export const Order = () => {
+export const Order = ({ModalShow}) => {
+
+
+
 	return (
 		<div className="order">
 			<div className="order_header">
@@ -21,8 +25,8 @@ export const Order = () => {
 			</div>
 			<div className="order_main">
 				<ul className="order_main-list">
-					{orderData.map((order) => (
-						<li className="order_main-item">
+					{orderData.map((order, i) => (
+						<li key={i} className="order_main-item">
 							<div className="order_info">
 								<div className="order_item">
 									<img className="order_img" src={order.foodImg} alt="" />
@@ -45,7 +49,9 @@ export const Order = () => {
 									marginBottom: "24px",
 								}}
 							>
-								<InputField />
+								<InputField classname="order_input" 
+								type="text"
+								placeholder="Please, just a little bit spicy only." />
 								<button className="delete_order"></button>
 							</div>
 						</li>
@@ -61,7 +67,7 @@ export const Order = () => {
 					<p>Sub total</p>
 					<span>$29.82</span>
 				</div>
-                <button className="payment_btn" onClick={() => alert("Opened")}>Continue to Payment</button>
+                <button className="payment_btn" onClick={ModalShow}>Continue to Payment</button>
 			</div>
 		</div>
 	);
