@@ -1,5 +1,5 @@
-export const InputField = ({text, name, value, placeholder, onchange}) => {
+export const InputField = ({classname,type, name, value, dataType,checkeed, placeholder,forwardRef , onInput , onChange}) => {
     return (
-        <input className="order_input" type={text} name={name} value={value} placeholder={placeholder} onChange={onchange} />
+        <input className={classname} type={type} name={name} value={value} placeholder={placeholder} ref={forwardRef} checkeed={checkeed} data-type={dataType} onChange={onChange} onInput={onInput} />
     )
 }

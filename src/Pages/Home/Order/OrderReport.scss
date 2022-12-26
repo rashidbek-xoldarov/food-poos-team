@@ -1,0 +1,117 @@
+.order_report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    padding-bottom: 16px;
+}
+
+.order_info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 74px 0 24px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #393C49;
+}
+
+.order_info-txt {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    
+}
+
+.order_report-filter {
+    position: relative;
+    min-width: 128px;
+    padding: 13px;
+    padding-left: 37px;
+    background: #1F1D2B;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    color: #fff;
+    appearance: none;
+    background-image: url("../../../assets/images/Option.svg");
+    background-repeat: no-repeat;
+    background-position: calc(10% - 1px) calc(50% + 1px);
+    option {
+        display: inline-block;
+        height: 55px;
+        font-size: 16px;
+        padding-top: 33px;
+    }
+}
+
+.customers_list {
+    height: 376px;
+    list-style: none;
+    margin: 0;
+    padding: 16px 24px;
+    overflow-y: scroll;
+}
+
+.customers_list::-webkit-scrollbar {
+    display: none;
+}
+
+.customers_item {
+    display: flex;
+    align-items: start;
+}
+
+.customer_image {
+    width: 32px;
+    height: 32px;
+    margin-top: 5px;
+    margin-right: 16px;
+    background-color: #ffbd42;
+    border-radius: 50%;
+}
+
+.customers_item:nth-child(2) .customer_image {
+    background-color: #42b3ff;
+}
+
+.customers_item:nth-child(3) .customer_image {
+    background-color: #f02ea5;
+}
+
+.customer_name {
+    min-width: 94px;
+    margin-right: 133px;
+}
+
+.customer_order-type {
+    width: 145px;
+    margin-right: 111px;
+}
+
+.order_billing {
+    width: 1px;
+    margin-right: 295px;
+}
+
+.order_status {
+    min-width: 91px;
+    font-weight: 500;
+    padding: 4px 12px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.Completed {
+    background-color: #6be2be3d;
+    color: #50D1AA;
+}
+
+.Preparing {
+    background-color: #9290fe33;
+    color: #9290FE;
+}
+
+.Pending {
+    background-color: #ffb57233;
+    color: #FFB572;
+}

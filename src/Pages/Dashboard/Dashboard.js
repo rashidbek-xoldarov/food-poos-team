@@ -1,4 +1,5 @@
 import React from "react";
+import { OrderReport } from "../Home/Order/OrderReport";
 
 import "./Dashboard.scss";
 import DashboardHeader from "./DashboardLeft/DashboardHeader";
@@ -12,6 +13,9 @@ const Dashboard = () => {
         <DashboardHeader />
         <div className="dashboard-main">
           <DashboardStatistics />
+          <div className="order_report">
+            <OrderReport />
+          </div>
         </div>
       </div>
       <div className="dashboard-right">
