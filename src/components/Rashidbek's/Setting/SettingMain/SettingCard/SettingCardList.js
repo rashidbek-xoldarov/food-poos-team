@@ -27,8 +27,9 @@ const SettingCardList = () => {
           <span className="setting-card-plus">+</span>
           Add new dish
         </li>
-        {SettingCardList.map((item) => (
+        {SettingCardList.map((item, index) => (
           <SettingCardItem
+            key={index}
             img={food}
             title="Spicy seasoned seafood noodles"
             price="2.29"

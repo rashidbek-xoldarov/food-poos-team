@@ -27,7 +27,7 @@ const DashboardStatistics = () => {
   return (
     <ul className="dashboard-statistics-list">
       {StatisticsList.map((item) => (
-        <li className="dashboard-statistics-item">
+        <li key={item.title} className="dashboard-statistics-item">
           <span className={`dashboard-statistics-percent ${item.class}`}>
             {item.percent}
           </span>

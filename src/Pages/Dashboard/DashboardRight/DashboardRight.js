@@ -21,8 +21,8 @@ const DashboardRight = () => {
         </div>
         <div className="dashboard-right-list-wrapper">
           <ul className="dashboard-right-list">
-            {list.map((item) => (
-              <li className="dashboard-right-item">
+            {list.map((item, index) => (
+              <li key={index} className="dashboard-right-item">
                 <img src={foodImg} alt="foods" width="56" height="56" />
                 <div className="dashboard-right-item-info">
                   <h4 className="dashboard-right-item-title">

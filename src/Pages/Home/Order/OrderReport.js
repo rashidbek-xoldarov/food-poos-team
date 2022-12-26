@@ -2,9 +2,9 @@ import "./OrderReport.scss";
 import { customers } from "../../../data/customers";
 
 export const OrderReport = () => {
-  customers.map((item, i) => {
-    return console.log(item);
-  });
+  // customers.map((item, i) => {
+  //   return console.log(item);
+  // });
 
   return (
     <>
