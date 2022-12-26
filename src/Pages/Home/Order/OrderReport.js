@@ -29,8 +29,10 @@ export const OrderReport = () => {
         <ul className="customers_list">
           {customers.map((item, i) => (
             <li className="customers_item" key={i}>
-              <img className="customer_image" src={item.image} alt="" />
-              <p className="customer_name">{item.name}</p>
+              <div className="customer_item-first">
+                <img className="customer_image" src={item.image} alt="" />
+                <p className="customer_name">{item.name}</p>
+              </div>
               <p className="customer_order-type">{item.menu}</p>
               <p className="order_billing">{item.totalPayment}</p>
               <p className={`order_status ${item.status}`}>{item.status}</p>
