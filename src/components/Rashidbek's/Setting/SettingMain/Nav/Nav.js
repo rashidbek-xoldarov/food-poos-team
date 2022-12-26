@@ -12,7 +12,7 @@ const Nav = () => {
             className={({ isActive }) =>
               isActive ? "site-nav-link link-active" : "site-nav-link"
             }
-            to="/settings"
+            to="hot"
           >
             Hot Dishes
             <span className="line"></span>

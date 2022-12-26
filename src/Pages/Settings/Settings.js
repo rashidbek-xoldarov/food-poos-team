@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Redirect, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import SettingMain from "../../components/Rashidbek's/Setting/SettingMain/SettingMain";
 import SettingSidebarList from "../../components/Rashidbek's/Setting/SettingSidebar/SettingSidebarList";
 
@@ -12,7 +12,11 @@ const Settings = () => {
       <div className="settings-inner">
         <SettingSidebarList />
         <Routes>
-          <Route index element={<SettingMain />} />
+          <Route
+            path="/"
+            element={<Navigate to="managament" replace={true} />}
+          />
+          <Route path="managament/*" element={<SettingMain />} />
         </Routes>
       </div>
     </div>

@@ -27,7 +27,7 @@ const SettingSidebarList = () => {
     },
     {
       image: <Management className="settingbar-img" />,
-      url: "/settings",
+      url: "managament",
       title: "Products Management",
       text: "Manage your product, pricing, etc",
     },
@@ -58,7 +58,7 @@ const SettingSidebarList = () => {
         <li className="settingbar-item" key={item.title}>
           <NavLink
             to={item.url}
-            end
+            // end
             className={({ isActive }) =>
               isActive
                 ? "settingbar-link active-link-settingbar"

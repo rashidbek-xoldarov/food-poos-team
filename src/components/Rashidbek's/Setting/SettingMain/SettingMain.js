@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Nav from "./Nav/Nav";
 import SettingCardList from "./SettingCard/SettingCardList";
 
@@ -19,7 +19,8 @@ const SettingMain = () => {
       </div>
       <Nav />
       <Routes>
-        <Route index element={<SettingCardList />} />
+        <Route path="/" element={<Navigate to="hot" />} />
+        <Route path="/hot" element={<SettingCardList />} />
       </Routes>
     </div>
   );

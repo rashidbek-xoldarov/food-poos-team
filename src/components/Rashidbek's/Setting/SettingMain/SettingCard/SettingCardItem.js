@@ -11,6 +11,7 @@ const SettingCardItem = ({ img, title, price, amount, setModalState }) => {
         <span className="setting-card-item-price">$ {price}</span>
         <span className="setting-card-item-amount">{amount} Bowls</span>
       </div>
+
       <button
         className="setting-card-item-edi-btn"
         onClick={() => {

@@ -1,0 +1,93 @@
+.dashboard-right-top {
+  padding: 24px;
+  background: #1f1d2b;
+  border-radius: 8px;
+}
+
+.dashboard-right-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #393c49;
+}
+
+.dashboard-right-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.dashboard-right-select {
+  padding: 13px 13px 13px 43px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  background: #1f1d2b;
+  border: 1px solid #393c49;
+  border-radius: 8px;
+  appearance: none;
+  background-image: url("../../../assets/images/arrow-ios-down.png");
+  background-repeat: no-repeat;
+  background-position: center left 14px;
+}
+
+.dashboard-right-list {
+  margin: 15px 0 15px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.dashboard-right-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.dashboard-right-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.dashboard-right-item-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #e0e6e9;
+}
+
+.dashboard-right-item-price {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #abbbc2;
+}
+
+.dashboard-right-btn {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #ea7c69;
+  background-color: transparent;
+  border: 1px solid #ea7c69;
+  border-radius: 8px;
+}
+
+.dashboard-right-boottom {
+  margin-top: 20px;
+  padding: 24px;
+  background: #1f1d2b;
+  border-radius: 8px;
+}
+
+.dashboard-right-bottom-img {
+  margin-top: 10px;
+}
