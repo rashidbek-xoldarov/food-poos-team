@@ -1,13 +1,13 @@
 import "./Food.scss"
 
-export const Food = ({foodImg, foodName, foodPrice, id, isAvailable}) => {
+export const Food = ({ id, name, image, price, bowls}) => {
     return (
         <li className="food_item">
-            <img className="food_img" src={foodImg} alt={foodName} />
+            <img className="food_img" src={`http://localhost:5000/${image}`} alt={name} />
             <div className="food_item-box">
-                <h3 className="food_title">{foodName}</h3>
-                <span className="food_price">{foodPrice}</span>
-                <p className="food_available">{isAvailable}</p>
+                <h3 className="food_title">{name}</h3>
+                <span className="food_price">{price}</span>
+                <p className="food_available">{bowls}</p>
             </div>
         </li>
     )
