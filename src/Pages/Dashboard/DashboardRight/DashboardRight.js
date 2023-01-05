@@ -3,6 +3,7 @@ import React from "react";
 import foodImg from "../../../assets/images/food.png";
 import chart from "../../../assets/images/Chart.png";
 import "./DashboardRight.scss";
+import AppexChart from "../../../components/Rashidbek's/AppexChart/AppexChart";
 
 const DashboardRight = () => {
   const list = Array(3).fill(1);
@@ -49,13 +50,7 @@ const DashboardRight = () => {
           </select>
         </div>
         <div className="dashboard-right-boottom-img-wrapper">
-          <img
-            className="dashboard-right-bottom-img"
-            src={chart}
-            alt="chart diagram"
-            width="308"
-            height="176"
-          />
+          <AppexChart />
         </div>
       </div>
     </div>
