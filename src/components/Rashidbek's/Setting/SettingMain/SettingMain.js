@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Nav from "./Nav/Nav";
 import SettingCardList from "./SettingCard/SettingCardList";
@@ -6,6 +6,8 @@ import SettingCardList from "./SettingCard/SettingCardList";
 import "./SettingMain.scss";
 
 const SettingMain = () => {
+  const [id, setId] = useState(1);
+
   return (
     <div className="setting-main">
       <div className="setting-main-top">
@@ -17,10 +19,10 @@ const SettingMain = () => {
           <option value="3">Manage Categories</option>
         </select>
       </div>
-      <Nav />
+      <Nav setId={setId} />
       <Routes>
-        <Route path="/" element={<Navigate to="hot" />} />
-        <Route path="/hot" element={<SettingCardList />} />
+        <Route path="/" element={<Navigate to={`hot/${id}`} />} />
+        <Route path={`hot/${id}`} element={<SettingCardList id={id} />} />
       </Routes>
     </div>
   );

@@ -17,6 +17,7 @@ const Settings = () => {
             element={<Navigate to="managament" replace={true} />}
           />
           <Route path="managament/*" element={<SettingMain />} />
+          <Route path="appereance" element={<h2>apperriance</h2>} />
         </Routes>
       </div>
     </div>
