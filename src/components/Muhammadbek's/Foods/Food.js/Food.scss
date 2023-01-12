@@ -1,49 +1,59 @@
-
 .food_item {
-    position: relative;
-    width: 192px;
-    margin-bottom: 58px;
-    padding: 0 24px 24px;
-    text-align: center;
-    background: #1F1D2B;
-    border-radius: 16px;
+  position: relative;
+  width: 192px;
+  margin-bottom: 58px;
+  padding: 0 24px 24px;
+  text-align: center;
+  background: #1f1d2b;
+  border-radius: 16px;
 }
 
 .food_img {
-    position: absolute;
-    top: -3.5rem;
-    right: 0;
-    left: 0;
-    width: 132px;
-    height: 132px;
-    margin: 0 auto;
-    border-radius: 50%;
+  position: absolute;
+  top: -3.5rem;
+  right: 0;
+  left: 0;
+  width: 132px;
+  height: 132px;
+  margin: 0 auto;
+  border-radius: 50%;
+  animation: aylana linear infinite 6s;
+}
+
+@keyframes aylana {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .food_item-box {
-    margin-top: 114px;
+  margin-top: 114px;
 }
 
 .food_title {
-    font-family: 'Barlow';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 130%;
-    color: #FFFFFF;
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
 }
 
 .food_price {
-    font-family: 'Barlow';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 130%;
-    color: #FFFFFF;
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
 }
 
 .food_available {
-    font-family: 'Barlow';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: #ABBBC2;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #abbbc2;
 }

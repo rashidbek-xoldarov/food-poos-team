@@ -23,6 +23,11 @@ const SettingMain = () => {
       <Routes>
         <Route path="/" element={<Navigate to={`hot/${id}`} />} />
         <Route path={`hot/${id}`} element={<SettingCardList id={id} />} />
+        <Route path={`cold/${id}`} element={<SettingCardList id={id} />} />
+        <Route path={`soup/${id}`} element={<SettingCardList id={id} />} />
+        <Route path={`grill/${id}`} element={<SettingCardList id={id} />} />
+        <Route path={`appetizer/${id}`} element={<SettingCardList id={id} />} />
+        <Route path={`dessert/${id}`} element={<SettingCardList id={id} />} />
       </Routes>
     </div>
   );

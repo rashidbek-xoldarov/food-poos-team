@@ -1,45 +1,43 @@
 @import "../../../assets/styles/mixin";
 
 .food_box {
-    width: 100%;
-    height: 470px;
-    overflow-y: scroll;
+  width: 100%;
+  height: 540px;
+  overflow-y: scroll;
 }
 
 .food_box::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .hot_header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 140%;
-    color: #fff;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #fff;
 }
-
 
 .food_select {
-    margin-bottom: 58px;
-    padding: 15px;
-    padding-left: 20px;
-    background: #1F1D2B;
-    color: #fff;
-    border: 1px solid #393C49;
-    border-right: 11px solid #1F1D2B;
-    border-radius: 8px;
+  margin-bottom: 58px;
+  padding: 15px;
+  padding-left: 20px;
+  background: #1f1d2b;
+  color: #fff;
+  border: 1px solid #393c49;
+  border-right: 11px solid #1f1d2b;
+  border-radius: 8px;
 }
 
-
 .foods_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @include unstyled
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  @include unstyled;
 }

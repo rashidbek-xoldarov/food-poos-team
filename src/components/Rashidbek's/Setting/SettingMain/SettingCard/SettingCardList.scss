@@ -1,12 +1,10 @@
 .setting-card-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 355px;
+  gap: 30px;
+  height: 450px;
   margin: 24px 0 0;
   padding-left: 0;
-
   list-style: none;
   overflow: scroll;
 }
